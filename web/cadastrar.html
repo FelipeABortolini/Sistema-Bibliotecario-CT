@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('cadastrar')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">CADASTRAR LIVRO</div>
+
+        </div>
+
+        <div class="bodyCadastro" style="margin-top: 6%;">
+            <div class="rowOneCadastro">
+                <label class="labelCadastro">Nome:</label>
+                <br>
+                <input class="inputCadastro" id="nome" type="text">
+            </div>
+            <br>
+            <div class="rowTwoCadastro">
+                <div class="autorCadastro">
+                    <label class="labelCadastro">Autor:</label>
+                    <br>
+                    <input class="inputCadastro" id="autor" type="text">
+                </div>
+                <div class="exempCadastro">
+                    <label class="labelCadastro">N° exemplares:</label>
+                    <br>
+                    <input class="inputCadastro" id="exemplares" type="number">
+                </div>
+            </div>
+        </div>
+
+        <div class="botoesCadastro">
+            <button class="botaoSec" onclick="go('index.html')">Voltar</button>
+            <button class="botaoSec" onclick="testeCadastraLivro();">Cadastrar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

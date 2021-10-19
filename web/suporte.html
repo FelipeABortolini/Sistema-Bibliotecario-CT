@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('suporte')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo" style="margin-left: 25%;">SUPORTE</div>
+
+        </div>
+
+        <div class="bodySuporte">
+            <div class="colOneSuporte">
+
+                <div class="bodyDadosContato">
+                    <label class="titleSuporte">Contatos</label>
+                    <br><br><br>
+                    <label class="labelContatos">Felipe Augusto Bortolini<br>(54) 98145-0208<br>@lipe__borto<br><br>Júlia Pedroso Lusa<br>(54) 99676-1139<br>@ju_lusa00</label>
+                </div>
+
+            </div>
+
+            <img class="div_vert" src="imagens/divisoria_vertical.png" height="100%">
+
+            <div class="colTwoRetirada">
+                <div class="bodyAlteraSenha">
+                    <label class="titleSuporte">Alterar Senha</label>
+
+                    <div class="rowOneAlteraSenha">
+                        <label class="labelSuporte">Senha atual:</label>
+                        <br><br>
+                        <input class="inputSuporte" id="idSenhaAtual" type="password" style="width: 44%; margin-top: 0%;">
+                    </div>
+
+                    <div class="rowTwoAlteraSenha">
+                        <div class="divNovaSenha">
+                            <label class="labelSuporte">Nova senha:</label>
+                            <br>
+                            <input class="inputSuporte" id="idNovaSenha" type="password" style="width: 90%;">
+                        </div>
+                        <div class="divConfirmaSenha">
+                            <label class="labelSuporte">Confirma senha:</label>
+                            <br>
+                            <input class="inputSuporte" id="confirma" type="password" style="width: 90%;">
+                        </div>
+                    </div>
+
+                    <div class="botoesSuporte" style="margin-top: 4%;">
+                        <button class="botaoSec" style="width: 25%; height: 120%;" onclick="alteraSenha()">Salvar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="botoesSuporte">
+            <button class="botaoSec" onclick="go('index.html')">Voltar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

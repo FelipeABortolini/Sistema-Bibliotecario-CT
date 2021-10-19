@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('retirada'); busca_checkbox('retirada')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">RETIRADA</div>
+
+        </div>
+
+        <div class="bodyRetirada">
+            <div class="colOneRetirada">
+                <form class="buscarSecRet">
+                    <input class="pesquisaSecRet" id="buscaRet" type="text" placeholder="Nome / Autor" onkeyup="buscaRetirada()">
+                </form>
+
+                <div class="listaRetirada" id="retirada" style="height: 70%;">
+                    <label class="legendaRetirada" id='a'>Nome do Livro | Autor</label>
+                    <br>
+                </div>
+
+                <label class="avisoRet" id='a'>Obs: Livros desabilitados não podem ser retirados pois não há exemplares disponíveis.</label>
+
+            </div>
+
+            <img class="div_vert" src="imagens/divisoria_vertical.png" height="105%">
+
+            <div class="colTwoRetirada">
+                <div class="rowOneRetirada">
+                    <div class="nomeGuerraRetirada">
+                        <label class="labelRetirada" id="a">Nome de guerra:</label>
+                        <input class="inputRetirada" id="nomeGuerra" type="text">
+                    </div>
+                    <div class="turmaRetirada">
+                        <label class="labelRetirada" id="a">Turma:</label>
+                        <input class="inputRetiradaTurma" id="turma" type="text">
+                    </div>
+                </div>
+                <br><br>
+                <div class="rowTwoRetirada">
+                    <div class="dataRetirada">
+                        <label class="labelRetirada" id="a">Data de retirada:</label>
+                        <br>
+                        <input class="inputRetirada" id="inputDataRetirada" type="date" min="2021-10-15">
+                    </div>
+                    <div class="diasRetirada">
+                        <label class="labelRetirada" id="a">Devolução em:</label>
+                        <input class="inputRetiradaDias" id="diasRetirada" type="number" placeholder="dias" max="15" min="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="botoesRetirada">
+            <button class="botaoSec" onclick="go('index.html')">Voltar</button>
+            <button class="botaoSec" onclick="testeAlunoRetirada()">Registrar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('listar'); busca_checkbox('listar')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">LISTAR LIVROS</div>
+
+        </div>
+
+        <div class="bodyListar">
+            <form class="buscarSec">
+                <input class="pesquisaSec" id="buscaList" type="text" placeholder="Nome / Autor" onkeyup="buscaListar()">
+            </form>
+
+            <div class="listaListar" id="listar">
+                <label class="legendaListar">Nome do Livro | Autor | N° Exemplares | N° disponíveis</label>
+                <br>
+            </div>
+        </div>
+
+        <div class="botoesListar">
+            <button class="botaoSec" onclick="go('index.html')">Voltar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('index')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">BIBLIOTECA CTBM-PF</div>
+
+            <button class="botao-pequeno" onclick="go('suporte.html')">Suporte</button>
+            <button class="botao-pequeno" onclick="go('login.html')">Sair</button>
+        </div>
+
+        <!--<form>
+            <input class="pesquisa" type="text" placeholder="Pesquisar">
+            <input class="search" type="image" src="imagens/lupa.png">
+        </form>-->
+
+        <div class="bodyIndex">
+            <div class="subtitulo">
+                <label class="labelSubtitulo">LIVROS</label>
+            </div>
+            <br>
+            <div class="divBotoes">
+                <button class="botao" onclick="go('cadastrar.html')">Cadastrar</button>
+                <button class="botao" onclick="go('remover.html')">Remover</button>
+                <button class="botao" onclick="go('editar.html')">Editar</button>
+                <button class="botao" onclick="go('listar.html')">Listar</button>
+            </div>
+            <br>
+            <img src="imagens/divisão.png" width="90%">
+            <br>
+            <div class="subtitulo">
+                <label class="labelSubtitulo">SISTEMA</label>
+            </div>
+            <br>
+            <div class="divBotoes">
+                <button class="botao" onclick="go('retirada.html')">Retirada</button>
+                <button class="botao" onclick="go('devolucao.html')">Devolução</button>
+                <button class="botao" onclick="go('emAberto.html')">Em aberto</button>
+                <button class="botao" onclick="go('historico.html')">Histórico</button>
+            </div>
+        </div>
+
+        <footer class="creditos">Developed by<br>Al. Bortolini (2017-2019)<br>Al. Lusa (2019-2021)</footer>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

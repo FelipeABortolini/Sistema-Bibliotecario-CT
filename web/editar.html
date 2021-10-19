@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('editar'); busca_checkbox('editar')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">EDITAR LIVRO</div>
+        </div>
+
+        <div class="bodyEditar">
+
+            <form class="buscarSec">
+                <input class="pesquisaSec" id="buscaEdi" type="text" placeholder="Nome / Autor" onkeyup="buscaEditar()">
+            </form>
+
+            <div class="listaEditar" id="editar">
+                <label class="legendaEditar">Nome do Livro | Autor | N° Exemplares</label>
+                <br>
+            </div>
+        </div>
+
+        <div class="botoesEditar">
+            <button class="botaoSec" onclick="go('index.html')">Voltar</button>
+            <button class="botaoSec" onclick="goEditarLivro()">Editar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

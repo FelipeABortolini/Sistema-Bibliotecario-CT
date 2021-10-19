@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('editar1'); informacoes_livro_placeholder()">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">EDITAR LIVRO</div>
+        </div>
+
+        <form>
+            <input class="pesquisa" type="text" placeholder="Pesquisar">
+            <input class="search" type="image" src="imagens/lupa.png">
+        </form>
+
+        <label class="avisoEditar">PREENCHA APENAS OS CAMPOS QUE DESEJA MODIFICAR!</label>
+        <br>
+
+        <div class="bodyEditar1">
+            <div class="rowOneEditar">
+                <label class="labelEditar">Nome:</label>
+                <br>
+                <input class="inputEditar" id="nomeEditar" type="text">
+            </div>
+            <br>
+            <div class="rowTwoEditar">
+                <div class="autorEditar">
+                    <label class="labelEditar">Autor:</label>
+                    <br>
+                    <input class="inputEditar" id="autorEditar" type="text">
+                </div>
+                <div class="exempEditar">
+                    <label class="labelEditar">N° exemplares:</label>
+                    <br>
+                    <input class="inputEditar" id="exemplaresEditar" type="number">
+                </div>
+            </div>
+        </div>
+
+        <div class="botoesEditar">
+            <button class="botaoSec" onclick="go('editar.html')">Voltar</button>
+            <button class="botaoSec" onclick="editarLivro(); go('editar.html')">Salvar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

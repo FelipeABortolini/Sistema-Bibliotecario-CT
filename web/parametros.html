@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('parametros'); buscaAtual()">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">PARÂMETROS MULTA</div>
+
+        </div>
+
+        <div class="bodyParametros" style="width: 100%; height: 50%;">
+            <div style="margin-left: auto; margin-right: auto; margin-top: 4%; width: 50%; height: 30%;">
+                <label class="labelParam" style="text-align: center;">Período de acréscimo da multa:</label>
+                <br>
+                <div style="margin-top: 1%;">
+                    <label class="labelParam" style="font-size: 90%;">Atual:</label>
+                    <input id="periodoAtual" disabled='' style="background-color: gray; width: 10%; height: 15%; border-radius: 10px;">
+                </div>
+                <input class="inputParam" id="periodo" type="number" min="0" placeholder="dias úteis">
+            </div>
+            <br><br>
+            <div style="margin-left: auto; margin-right: auto; width: 50%; height: 30%;">
+                <label class="labelParam">Acréscimo por período:</label>
+                <br>
+                <div style="margin-top: 1%;">
+                    <label class="labelParam" style="font-size: 90%;">Atual:</label>
+                    <input id="valorAtual" disabled='' style="background-color: rgb(128, 122, 122); width: 10%; height: 15%; border-radius: 10px; color: white;">
+                </div>
+                <input class="inputParam" id="valor" type="number" step="0.25" min="0" placeholder="R$">
+            </div>
+
+        </div>
+
+        <div class="botoesParam">
+            <button class="botaoSec" onclick="go('devolucao.html')">Voltar</button>
+            <button class="botaoSec" onclick="atualizaParam()">Salvar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

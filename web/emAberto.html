@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Biblioteca CT</title>
+</head>
+
+<body onload="altera_tela_atual('emAberto'); busca_checkbox('emAberto')">
+
+    <div class="box">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/logoCT.png" width="130" height="130">
+            </div>
+
+            <div class="titulo">EM ABERTO</div>
+
+        </div>
+
+        <div class="bodyEmAberto">
+            <div style="display: flex;">
+                <form class="buscarSec">
+                    <input class="pesquisaSec" id="buscaAberto" type="text" placeholder="Aluno / Turma / Livro" onkeyup="buscaEmAberto()">
+                </form>
+
+                <select class="selectEmAberto" onchange="busca_checkbox2()" id="selectEmAberto" onclick="disableFirstOpt()">
+                    <option id='firstOpt'>Ordenar por:</option>
+                    <option value="a">Nenhuma opção</option>
+                    <option value="data_retirada">Data de retirada</option>
+                    <option value="prazo_devolucao">Prazo de devolução</option>
+                </select>
+            </div>
+
+            <div class="listaEmAberto" id="emAberto">
+                <label class="legendaEmAberto">Aluno | Turma | Livro | Autor | Data de Retirada | Prazo Devolução</label>
+                <br>
+            </div>
+        </div>
+
+        <div class="botoesEmAberto">
+            <button class="botaoSec" onclick="go('index.html')">Voltar</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
