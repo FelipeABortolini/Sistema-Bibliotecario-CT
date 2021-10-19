@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,500&family=Roboto:wght@100&display=swap');
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../imagens/Fundo3.png");
+    background-size: cover;
+    width: 97vw;
+    height: 97vh;
+}
+.divLogin{
+    background-color: hsla(200, 100%, 100%, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 15px;
+    border: solid #010165;
+    color: #fff;
+}
+.tituloLogin{
+    color: #010165;
+    font-size: 30px;
+}
+.inputLogin{
+    padding: 15px;
+    border: solid 1px black;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.botaoLogin{
+    border-radius: 8px;
+    width: 100%;
+    font-size: 100%;
+    color: white;
+    padding: 10px;
+    background-color: #010165;
+    box-shadow: 2px 2px 2px #ec444b;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.box{
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: hsla(200, 100%, 100%, 0.9);
+    border: solid 3px #010165;
+    position: relative;
+    top: 10%;
+    left: 1%;
+    overflow: auto;
+}
+.cabecalho{
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    /*border: solid 1px black;*/
+    display: flex;
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    /*border: solid 1px black;*/
+    border-radius: 20px;
+}
+.titulo{
+    font-size: 320%;
+    /*border: solid 1px rgb(85, 255, 0);*/
+    width: 65%;
+    height: 35%;
+    position: relative;
+    text-align: left;
+    top: 20%;
+    letter-spacing: 5px;
+    margin-left: 15px;
+    font-family: 'EB Garamond', serif;
+}
+form {
+    display:flex;
+    flex-direction:row;
+    border:1px solid grey;
+    padding:2px;
+    border-radius: 13px;
+    position: relative;
+    top: -5%;
+    left: 60%;
+    height: 5%;
+    width: 35%;
+    background-color: white;
+    padding-right: 10px;
+    /*border: solid 1px rgb(85, 255, 0);*/
+}
+.bodyDadosContato{
+    /*border: solid 1px rgb(85, 255, 0);*/
+    height: 90%;
+}
+.bodyAlteraSenha{
+    /*border: solid 1px rgb(255, 0, 191);*/
+    height: 90%;
+}
+.labelContatos{
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 135%;
+}
+.rowOneAlteraSenha{
+    /*border: solid 1px rgb(255, 0, 0);*/
+    height: 23%;
+    padding-left: 2%;
+    margin-top: 5%;
+}
+.rowTwoAlteraSenha{
+    /*border: solid 1px rgb(0, 255, 221);*/
+    margin-top: 5%;
+    display: flex;
+    height: 23%;
+}
+.divNovaSenha{
+    /*border: solid 1px rgb(0, 255, 13);*/
+    width: 50%;
+    padding-left: 2%;
+}
+.divConfirmaSenha{
+    /*border: solid 1px rgb(255, 196, 0);*/
+    width: 50%;
+    padding-left: 2%;
+}
+.titleSuporte{
+    /*border: solid 1px rgb(0, 81, 255);*/
+    width: 100%;
+    font-weight: bold;
+    font-size: 160%;
+    font-family: 'EB Garamond', serif;
+}
+.buscarSec{
+    display:flex;
+    flex-direction:row;
+    border:1px solid grey;
+    padding:2px;
+    border-radius: 13px;
+    position: relative;
+    top: 0%;
+    left: 4%;
+    height: 7%;
+    width: 35%;
+    background-color: white;
+    padding-right: 10px;
+    /*border: solid 1px rgb(85, 255, 0);*/
+}
+.buscarSecRet{
+    display:flex;
+    flex-direction:row;
+    border:1px solid grey;
+    padding:2px;
+    border-radius: 13px;
+    position: relative;
+    top: 0%;
+    left: 3%;
+    height: 7%;
+    width: 70%;
+    background-color: white;
+    padding-right: 10px;
+    /*border: solid 1px rgb(255, 0, 0);*/
+}
+.pesquisa:focus, .pesquisaSec:focus, .pesquisaSecRet:focus{
+    outline: none;
+}
+.pesquisa{
+    border-radius: 13px;
+    font-size: 100%;
+    padding-left: 10px;
+    border: none;
+    flex-grow:2;
+}
+.pesquisaSec{
+    border-radius: 13px;
+    font-size: 130%;
+    padding-left: 10px;
+    border: none;
+    flex-grow:2;
+}
+.pesquisaSecRet{
+    border-radius: 13px;
+    font-size: 100%;
+    padding-left: 10px;
+    border: none;
+    flex-grow:2;
+}
+.search{
+    height: 70%;
+    margin-top: 1%;
+}
+.avisoRem{
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    color: #817e7e;
+    font-weight: bold;
+    left: 0%;
+    font-size: 80%;
+    position: relative;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.avisoRet{
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    color: #817e7e;
+    font-weight: bold;
+    position: relative;
+    left: 0%;
+    font-size: 70%;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botao-pequeno{
+    position: relative;
+    top: 40%;
+    border-radius: 8px;
+    width: 7%;
+    height: 20%;
+    font-size: 80%;
+    color: white;
+    background-color: #010165;
+    box-shadow: 2px 2px 2px #ec444b;
+    border: none;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.bodyIndex{
+    /*border: solid 1px black;*/
+    position: relative;
+    top: 4%;
+    height: 50%;
+}
+.bodyCadastro, .bodyEditar1{
+    margin-top: 3%;
+    height: 40%;
+    width: 100%;
+    /*border: solid 1px rgb(25, 0, 255);*/
+}
+.bodyEditar, .bodyListar, .bodyDevolucao, .bodyEmAberto, .bodyHistorico{
+    /*border: solid 1px rgb(25, 0, 255);*/
+    position: relative;
+    top: 1%;
+    height: 60%;
+}
+.bodyRemover{
+    /*border: solid 1px rgb(25, 0, 255);*/
+    position: relative;
+    top: 1%;
+    height: 60%;
+}
+.bodyRetirada, .bodySuporte{
+    height: 60%;
+    width: 100%;
+    /*border: solid 1px rgb(0, 255, 34);*/
+    margin: auto;
+    display: flex;
+}
+.footDev{
+    /*border: solid 1px rgb(0, 255, 34);*/
+    height: 25%;
+    width: 93%;
+    margin-top: 1.5%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dataDev{
+    /*border: solid 1px rgb(0, 47, 255);*/
+    width: 30%;
+    height: 100%;
+}
+.atrasoDev{
+    /*border: solid 1px rgb(17, 0, 255);*/
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 0.5%;
+}
+.botaoCalcula{
+    /*border: solid 1px rgb(255, 0, 0);*/
+    height: 100%;
+    width: 15%;
+    margin-left: -5%;
+}
+.renovarDev{
+    /*border: solid 1px rgb(255, 102, 0);*/
+    height: 100%;
+    width: 25%;
+    margin-left: 11%;
+    margin-top: -0.8%;
+}
+.colOneRetirada, .colOneSuporte{
+    height: 98%;
+    width: 49%;
+    margin-top: 0.5%;
+    /*border: solid 1px rgb(25, 0, 255);*/
+}
+.colTwoRetirada{
+    /*border: solid 1px rgb(25, 0, 255);*/
+    height: 98%;
+    width: 49%;
+}
+.rowOneRetirada{
+    margin-top: 10%;
+    display: flex;
+    height: 20%;
+    /*border: solid 1px rgb(255, 0, 149);*/
+}
+.rowTwoRetirada{
+    display: flex;
+    height: 20%;
+    /*border: solid 1px rgb(238, 255, 0);*/
+}
+.nomeGuerraRetirada{
+    /*border: solid 1px rgb(0, 255, 242);*/
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+.turmaRetirada{
+    /*border: solid 1px rgb(0, 255, 242);*/
+    width: 20%;
+    height: 100%;
+    margin-left: 10%;
+}
+.dataRetirada{
+    /*border: solid 1px rgb(0, 255, 242);*/
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+.divDiasRetirada{
+    margin-top: 20%;
+    height: 100%;
+    /*border: solid 1px rgb(25, 0, 255);*/
+}
+.diasRetirada{
+    /*border: solid 1px rgb(0, 255, 242);*/
+    width: 30%;
+    height: 100%;
+    margin-left: 10%;
+    float: left;
+}
+.listaRemover, .listaEditar, .listaListar, .listaRetirada, .listaDevolucao, .listaEmAberto, .listaHistorico{
+    width: 90%;
+    height: 78%;
+    border-radius: 10px;
+    background: none;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    line-height: 30px;
+    color: hsla(hue, saturation, lightness, alpha);
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    overflow: auto;
+    font-size: 18px;
+    margin: auto;
+    position: relative;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.legendaRemover, .legendaEditar, .legendaListar, .legendaDevolucao, .legendaEmAberto, .legendaHistorico{
+    float: left;
+    font-size: 80%;
+    color: white;
+    background-color: rgba(66, 55, 55, 0.479);
+    width: 98%;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: auto;
+}
+.legendaRetirada{
+    float: left;
+    font-size: 80%;
+    color: white;
+    background-color: rgba(66, 55, 55, 0.479);
+    width: 97%;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: auto;
+}
+#idSelect{
+    border: solid 1px rgb(51, 255, 0);
+}
+.subtitulo{
+    text-align: left;
+    height: 5%;
+    width: 85%;
+    font-size: 30px;
+    font-weight: bold;
+    /*border: solid 1px rgb(85, 255, 0);*/
+    padding-left: 12%;
+    font-family: 'EB Garamond', serif;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.labelSubtitulo{
+    position: relative;
+    left: -8%;
+}
+.divBotoes{
+    /*border: solid 1px rgb(238, 255, 0);*/
+    height: 27%;
+    margin: none;
+    margin-top: 5px;
+}
+.botao{
+    border-radius: 8px;
+    width: 18%;
+    height: 100%;
+    font-size: 150%;
+    color: white;
+    padding: 10px;
+    background-color: #010165;
+    box-shadow: 2px 2px 2px #ec444b;
+    border: none;
+    letter-spacing: 2px;
+    /*font-weight: bold;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    /*margin-top: 10px;*/
+}
+.botao:hover, .botao-pequeno:hover{
+    background-color: #445a9d;
+    box-shadow: 2px 2px 2px #e47b80;
+}
+.botao:active, .botao-pequeno:active{
+    background-color: #ec444b;
+    box-shadow: 2px 2px 2px #010165;
+    color: #010165
+}
+.creditos{
+    margin-top: 7%;
+    font-size: 12px;
+    color: #a1a1a3;
+    line-height: 17px;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: -2%;
+    /*border: solid 1px rgb(85, 255, 0);*/
+}
+.pesquisasHistorico{
+    display: flex;
+}
+.rowOneCadastro, .rowOneEditar{
+    height: 30%;
+    width: 98%;
+    /*border: solid 1px rgb(255, 0, 0);*/
+    padding-left: 2%;
+}
+.rowTwoCadastro, .rowTwoEditar{
+    display: flex;
+    height: 30%;
+    /*border: solid 1px rgb(25, 0, 255);*/
+    padding-left: 2%;
+}
+.autorCadastro, .autorEditar{
+    /*border: solid 1px rgb(0, 255, 64);*/
+    width: 80%;
+    height: 100%;
+}
+.exempCadastro, .exempEditar{
+    /*border: solid 1px rgb(0, 204, 255);*/
+    width: 15%;
+    height: 100%;
+    margin-left: 2%;
+}
+.labelCadastro, .labelEditar, .labelSuporte{
+    float: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 140%;
+}
+.labelParam{
+    font-family: 'EB Garamond', serif;
+    font-size: 140%;
+}
+.labelRetirada, .labelDev{
+    float: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 130%;
+}
+.avisoEditar{
+    color: red;
+    margin: auto;
+    font-size: 140%;
+    font-weight: bolder;
+}
+.inputCadastro, .inputEditar, .inputRetirada, .inputDev, .inputSuporte{
+    margin-top: 5px;
+    float: left;
+    width: 96%;
+    height: 50%;
+    border-radius: 15px;
+    border: solid 2px black;
+    padding-left: 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 120%;
+}
+.selectHis{
+    border-radius: 13px;
+    width: 17%;
+    height: 40%;
+    margin-left: 5%;
+    font-size: 100%;
+    padding: 5px;
+}
+.selectEmAberto{
+    border-radius: 13px;
+    width: 17%;
+    font-size: 100%;
+    margin-left: 5%;
+    padding: 5px;
+}
+.inputParam{
+    margin-top: 1%;
+    width: 20%;
+    height: 50%;
+    border-radius: 15px;
+    border: solid 2px black;
+    padding-left: 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 120%;
+}
+.inputRetiradaDias, .inputDevDias{
+    margin-top: 5px;
+    float: left;
+    width: 40%;
+    height: 45%;
+    border-radius: 15px;
+    border: solid 2px black;
+    padding-left: 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 120%;
+}
+.inputRetiradaTurma{
+    margin-top: 5px;
+    float: left;
+    width: 60%;
+    height: 50%;
+    border-radius: 15px;
+    border: solid 2px black;
+    padding-left: 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 120%;
+}
+.botoesCadastro{
+    margin-top: -1%;
+    /*border: solid 2px black;*/
+    height: 13%;
+}
+.botoesRemover, .botoesEditar, .botoesListar, .botoesRetirada, .botoesDev, .botoesEmAberto, .botoesHistorico, .botoesSuporte, .botoesParam{
+    margin-top: 0%;
+    height: 13%;
+}
+.botaoSec{
+    border-radius: 8px;
+    width: 15%;
+    height: 80%;
+    font-size: 150%;
+    color: white;
+    padding: 10px;
+    background-color: #010165;
+    box-shadow: 2px 2px 2px #ec444b;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.botaoSec:hover, .botao-pequeno:hover, .botaoLogin:hover{
+    background-color: #445a9d;
+    box-shadow: 2px 2px 2px #e47b80;
+}
+.botaoSec:active, .botao-pequeno:active, .botaoLogin:active{
+    background-color: #ec444b;
+    box-shadow: 2px 2px 2px #010165;
+    color: #010165
+}
+.div_vert{
+    position: relative;
+    top: -2%;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #a8a4a4;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track-piece  {
+	background-color: #3b3b3b;
+    border-radius: 6px;
+	-webkit-border-radius: 6px;
+    position: relative;
+    margin-right: 5px;
+}
